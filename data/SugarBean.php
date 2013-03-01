@@ -3202,7 +3202,7 @@ class SugarBean
 
 					//if rname is set to 'name', and bean files exist, then check if field should be a concatenated name
 					global $beanFiles, $beanList;
-					if($data['rname'] && $data['rname'] == 'name' && !empty($beanFiles[$beanList[$rel_module]])) {
+					if($data['rname'] == 'name' && !empty($beanFiles[$beanList[$rel_module]])) {
 
 						//create an instance of the related bean
 						require_once($beanFiles[$beanList[$rel_module]]);
